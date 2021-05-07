@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess game</title>
+    <link rel="stylesheet" href="guessgame.css">
+    <link rel="text/javascript" href="guessgame.js">
+</head>
+<body>
+    <div class = "container" id="container">
+        <h3>Guess the number between 1 to n in log2(n) chances.</h3>
+        <div class="label" id= "label">Enter value for n:<br></div>
+        <input type="number" autocomplete = "off" id = "n" required>
+        <div class="label" id="glabel">Enter your guess:<br></div>
+        <div id="gbox">
+            <input type="text" id="guess" disabled>
+            <div class="status" id="status"></div>
+        </div>
+        <div class = "guesses" id="guesses">
+        </div>
+        <div id="correct"></div>
+        <div> 
+            <button class = "button" id = "reset">Try Again</button>
+            <span id = "rem_guess"></span>
+        </div>
+    </div>
+</body>
+</html>
