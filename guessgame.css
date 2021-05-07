@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    cursor:context-menu;
+}
+body{
+    background-color: black;
+}
+h3, .label{
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    margin: 5px;
+    font-size: medium;
+}
+input{
+    border-radius: 2px;
+    background-color: rgba(255,255,255,0.7);
+    cursor:text;
+    width:auto;
+    font-weight: 700;
+    border: 1px solid white;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    appearance: none;
+}
+input:focus{
+    box-shadow: inset 3px 3px 2px rgba(0,0,0,0.3),
+    inset -3px -3px 2px rgba(255,255,255,0.8);
+}
+::-webkit-scrollbar{
+    width:2px;
+}
+.guesses{
+    display: flex;
+    justify-content: space-evenly;
+    width:320px;
+    position: relative;
+    max-height: 190px;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+}
+.last_guess{
+    height:30px;
+    width:fit-content;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 4px 4px;
+    padding: 4px 4px;
+    text-align: center;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.button{
+    border-radius: 3px;
+    border:none;
+    cursor:pointer;
+    font-weight: 700;
+    display:none;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10px;
+    width: 80px;
+    height:25px;
+    font-size: 13px;
+}
+.button:hover{
+    font-size: 12px;
+    box-shadow: inset 5px 5px 3px rgba(0,0,0,0.3),
+    inset -5px -5px 3px rgba(255,255,255,1);
+}
+#gbox{
+    display:flex;
+}
+#rem_guess{
+    color:white;
+}
+.status{
+    background:url("qmark.png");
+    width:20px;
+    display:inline;
+    margin:0px 2px;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+#correct{
+    color:white;
+    font-size:17px;
+}
+.container{
+    padding: 20px;
+    margin:auto;
+    top:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    height: 450px;
+    width:400px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.09);
+}
